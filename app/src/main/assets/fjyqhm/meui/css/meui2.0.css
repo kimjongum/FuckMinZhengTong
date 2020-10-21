@@ -1,0 +1,730 @@
+@charset "utf-8";
+/* CSS Document */
+
+html,
+body {
+    height: 100%;
+}
+
+html,
+body,
+div,
+form,
+img,
+ul,
+ol,
+li,
+dl,
+dt,
+dd {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    border: 0;
+}
+
+select,
+input,
+textarea {
+    vertical-align: middle;
+    padding: 0;
+    margin: 0;
+}
+
+textarea {
+    resize: none;
+}
+
+img {
+    border: 0;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a,
+img,
+input,
+textarea,
+select,
+button,
+area {
+    outline: none;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*清除浮动*/
+
+.clearfix:after {
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+    _zoom: 1;
+}
+
+/*IE下a:hover 背景闪烁*/
+
+*html {
+    overflow: -moz-scrollbars-vertical;
+    _zoom:expression(function(ele) {
+        ele.style.zoom="1";
+        document.execCommand("BackgroundImageCache", false, true)
+    }
+    (this))
+}
+
+.lfloat {
+    float: left;
+}
+
+.rfloat {
+    float: right;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+td,
+th {
+    padding: 0;
+}
+
+.tm10 {
+    margin-top: 10px;
+}
+
+.m15 {
+    margin: 15px;
+}
+
+/*重置MUI样式*/
+
+body,
+.mui-content {
+    background: #f2f2f2;
+}
+
+.eui-bar {
+    border-bottom: 1px solid #e9e9e9;
+    box-shadow: none;
+    background: #fff;
+}
+
+.eui-bar .mui-icon-left-nav {
+    color: #8d8b8c;
+}
+
+/*地市服务之窗样式*/
+
+.eui-cityNav {
+    height: 100%;
+    background: #f2f2f2;
+    z-index: 1;
+}
+
+.eui-cityNav a {
+    display: block;
+    height: 44px;
+    line-height: 44px;
+    font-size: 12px;
+    color: #474344;
+    text-align: center;
+    border-bottom: 1px solid #e9e9e9;
+}
+
+.eui-cityNav a.active {
+    font-weight: bold;
+    color: #016eff;
+    background: #fff;
+}
+
+.eui-cityR {
+    margin-left: 90px;
+}
+
+.eui-ttCenter {
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    color: #474344;
+}
+
+.eui-ttCenter span {
+    position: relative;
+    display: inline-block;
+    height: 44px;
+}
+
+.eui-ttCenter span:before {
+    content: "";
+    position: absolute;
+    top: 22px;
+    left: -28px;
+    width: 18px;
+    height: 1px;
+    background: #474344;
+}
+
+.eui-ttCenter span:after {
+    content: "";
+    position: absolute;
+    top: 22px;
+    right: -28px;
+    width: 18px;
+    height: 1px;
+    background: #474344;
+}
+
+/*9宫格样式*/
+
+.eui-grid {
+    display: block;
+    font-size: 0;
+    width: 100%;
+    background: #fff;
+}
+
+.eui-grid li {
+    display: inline-block;
+    padding: 10px 4px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.eui-grid li a {
+    display: block;
+}
+
+.eui-grid li img {
+    width: 36px;
+    height: 36px;
+}
+
+.eui-grid li p {
+    margin: 0px;
+    font-size: 12px;
+    color: #474344;
+    line-height: 14px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+.eui-grid li:active {
+    background: #eee;
+}
+
+/*banner 样式*/
+
+.eui-banner,
+.eui-banner img {
+    display: block;
+    width: 100%;
+}
+
+/*标题 样式*/
+
+.eui-title {
+    display: flex;
+    align-items: center;
+    height: 44px;
+    font-size: 14px;
+    color: #292931;
+    font-weight: bold;
+    padding: 0 15px;
+    background: #fff;
+}
+
+.eui-title .icon {
+    width: 20px;
+    height: 16px;
+    margin-right: 6px;
+}
+
+/*专题推荐样式*/
+
+.eui-listTimg ul li {
+    margin-bottom: 20px;
+    box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.05);
+    background: #fff;
+}
+
+.eui-listTimg ul li a {
+    display: block;
+}
+
+.eui-listTimg ul li .pic,
+.eui-listTimg ul li .pic img {
+    width: 100%;
+}
+
+.eui-listTimg ul li .txt {
+    margin: 0 15px;
+}
+
+.eui-listTimg ul li .txt h3 {
+    font-weight: 400;
+    font-size: 14px;
+    color: #474344;
+    line-height: 24px;
+    margin: 0px;
+}
+
+.eui-listTimg ul li .txt p {
+    font-size: 12px;
+    color: #989898;
+    line-height: 24px;
+}
+
+.eui-listTimg ul li .txt span {
+    display: block;
+    position: relative;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    color: #474344;
+    border-top: 1px solid #e9e9e9;
+}
+
+.eui-listTimg ul li .txt span.mui-navigate-right:after {
+    color: #474344;
+    right: 0px;
+}
+
+.eui-listTimg ul li:active {
+    box-shadow: none;
+}
+
+/*左侧小图标列表*/
+
+.mui-content>.eui-listLicon:first-child {
+    margin: 0px;
+}
+
+.eui-listLicon li {
+    line-height: 26px;
+    font-size: 12px;
+}
+
+.eui-listLicon li a {
+    color: #494949;
+}
+
+.eui-listLicon .icon {
+    float: left;
+    width: 26px;
+    height: 26px;
+    margin-right: 10px;
+}
+
+.eui-listLicon li span {
+    float: right;
+    color: #c4c3c8;
+    margin-right: 20px;
+}
+
+.eui-listLicon li span font {
+    color: #474344;
+    padding-left: 20px;
+    background: url(../images/time.png) no-repeat left;
+    background-size: 14px 16px;
+}
+
+.eui-listLicon .mui-table-view-cell:after {
+    left: 0;
+    background: #dcdcdc;
+}
+
+.eui-listLicon:after,
+.eui-listLicon:before {
+    background: #dcdcdc;
+}
+
+.eui-listLicon li b {
+    float: right;
+    color: #474344;
+    margin-right: 20px;
+}
+
+/*通用列表*/
+
+.eui-list ul li {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 15px;
+}
+
+.eui-list ul li .icon {
+    width: 26px;
+    height: 26px;
+    margin-right: 10px;
+}
+
+.eui-list ul li .pic {
+    width: 36px;
+    height: 36px;
+    margin-right: 10px;
+}
+
+.eui-list ul li .arrowRight {
+    width: 6px;
+    height: 12px;
+    margin-left: 15px;
+}
+
+.eui-list ul li .txt {
+    flex: 1;
+}
+
+.eui-list ul li .txt h3 {
+    margin: 0px;
+    font-size: 14px;
+    color: #474344;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.eui-list ul li .txt p {
+    margin: 0px;
+    font-size: 11px;
+    color: #999;
+    line-height: 20px;
+}
+
+.eui-list ul li:after {
+    position: absolute;
+    right: 15px;
+    bottom: 0;
+    left: 15px;
+    height: 1px;
+    content: '';
+    -webkit-transform: scaleY(.5);
+    transform: scaleY(.5);
+    background-color: #eee;
+}
+
+.eui-list ul li:active {
+    background: #eee;
+}
+
+.eui-badge-success {
+    color: #1abc9c;
+    background: #dffcfd;
+}
+
+/*最新关注*/
+
+.eui-focus {
+    text-align: center;
+    margin: 0 45px;
+}
+
+.eui-focus img {
+    display: block;
+    width: 50%;
+    margin: 60px auto 20px;
+}
+
+.eui-focus h3 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    margin: 20px 0;
+}
+
+.eui-focus p {
+    font-size: 13px;
+    color: #8d8b8c;
+}
+
+/*我的诉求*/
+
+.eui-segment-Tab.mui-segmented-control {
+    border-bottom: 1px solid #dedede;
+}
+
+.eui-segment-Tab.mui-segmented-control-inverted .mui-control-item.mui-active {
+    color: #016eff;
+    border-bottom: 2px solid #016eff;
+}
+
+.eui-sqTt {
+    text-align: center;
+    line-height: 20px;
+    padding: 5px 15px 0px 15px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    background: #fff;
+}
+
+.eui-input-group.mui-input-group:before,
+.eui-input-group.mui-input-group:after {
+    background: transparent;
+}
+
+.eui-input-group .mui-input-row label {
+    font-size: 12px;
+    width: 30%;
+    color: #474344;
+    line-height: 21px;
+    padding: 10px 15px;
+}
+
+.eui-input-group .mui-input-row label~input {
+    font-size: 13px;
+    width: 70%;
+    text-align: right;
+    color: #474344;
+}
+
+.eui-input-group .mui-input-row label~span {
+    float: right;
+    width: 70%;
+    font-size: 13px;
+    text-align: left;
+    padding: 10px 15px 10px;
+    color: #474344;
+}
+
+.eui-input-group .mui-input-row label~textarea {
+    font-size: 13px;
+    width: 70%;
+    text-align: left;
+    padding: 10px 15px 10px;
+}
+
+.eui-input-group.mui-input-group .mui-input-row:after {
+    left: 0;
+}
+
+.eui-input-group .mui-input-row label~span h3 {
+    font-size: 13px;
+    font-weight: 400;
+    text-align: right;
+    color: #c4c3c8;
+}
+
+.eui-input-group .mui-input-row label~span b {
+    color: #ff2c36;
+    font-weight: 400;
+}
+
+.eui-input-group .mui-input-row label~p {
+    float: right;
+    width: 70%;
+    font-size: 13px;
+    text-align: right;
+    padding: 10px 15px 10px;
+    color: #474344;
+    margin: 0px;
+}
+
+/*医保样式*/
+
+.eui-scrollTab.mui-segmented-control.mui-scroll-wrapper {
+    height: 40px;
+}
+
+.eui-scrollTab.mui-segmented-control.mui-scroll-wrapper .mui-control-item {
+    position: relative;
+    line-height: 40px;
+    padding: 0 15px;
+    color: #474344;
+}
+
+.eui-scrollTab.mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active {
+    color: #016eff;
+}
+
+.eui-scrollTab.mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    right: 10px;
+    height: 2px;
+    background: #016eff;
+}
+
+.mui-slider .eui-scrollTab.mui-segmented-control.mui-segmented-control-inverted~.mui-slider-group .mui-slider-item {
+    border-top: 1px solid #dedede;
+    border-bottom: none;
+}
+
+.eui-healthList {
+    padding: 14px;
+    background: #fff;
+}
+
+.eui-healthList li {
+    border-radius: 10px;
+    box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.15);
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.eui-healthList li .tt {
+    height: 42px;
+    line-height: 42px;
+    font-size: 13px;
+    color: #474344;
+    padding: 0 15px;
+}
+
+.eui-healthList li table {
+    width: 100%;
+    text-align: center;
+    table-layout: fixed;
+    font-size: 13px;
+    color: #c4c3c8;
+    border-top: 1px solid #dcdcdc;
+    background: url(../images/yb-bg.png) no-repeat bottom;
+    background-size: 100% 23px;
+}
+
+.eui-healthList li table tr td {
+    padding: 24px 0;
+    line-height: 20px;
+    position: relative;
+}
+
+.eui-healthList li table tr td:after {
+    content: "";
+    position: absolute;
+    right: 0px;
+    top: 34px;
+    bottom: 34px;
+    width: 1px;
+    background: #c4c3c8;
+}
+
+.eui-healthList li table tr td:last-child:after {
+    background: #fff;
+}
+
+.eui-healthList li table tr td h3 {
+    font-family: arial;
+    font-size: 16px;
+    color: #474344;
+    margin: 0;
+}
+
+.eui-healthList li p {
+    height: 42px;
+    line-height: 42px;
+    font-size: 13px;
+    color: #c4c3c8;
+    padding: 0 15px;
+    margin: 0;
+}
+
+.eui-healthList li p b {
+    color: #474344;
+}
+
+.eui-info {
+    margin: 14px;
+    font-size: 13px;
+    color: #c4c3c8;
+}
+
+/*     加载效果样式       */
+
+.eui_loader {
+    position: relative;
+    width: 2.5em;
+    height: 2.5em;
+    transform: rotate(165deg);
+}
+
+.eui_loader:before,
+.eui_loader:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 0.5em;
+    height: 0.5em;
+    border-radius: 0.25em;
+    transform: translate(-50%, -50%);
+}
+
+.eui_loader:before {
+    animation: before 2s infinite;
+}
+
+.eui_loader:after {
+    animation: after 2s infinite;
+}
+
+@keyframes before {
+    0% {
+        width: 0.5em;
+        box-shadow: 1em -0.5em rgba(225, 20, 98, 0.75), -1em 0.5em rgba(111, 202, 220, 0.75);
+    }
+    35% {
+        width: 2.5em;
+        box-shadow: 0 -0.5em rgba(225, 20, 98, 0.75), 0 0.5em rgba(111, 202, 220, 0.75);
+    }
+    70% {
+        width: 0.5em;
+        box-shadow: -1em -0.5em rgba(225, 20, 98, 0.75), 1em 0.5em rgba(111, 202, 220, 0.75);
+    }
+    100% {
+        box-shadow: 1em -0.5em rgba(225, 20, 98, 0.75), -1em 0.5em rgba(111, 202, 220, 0.75);
+    }
+}
+
+@keyframes after {
+    0% {
+        height: 0.5em;
+        box-shadow: 0.5em 1em rgba(61, 184, 143, 0.75), -0.5em -1em rgba(233, 169, 32, 0.75);
+    }
+    35% {
+        height: 2.5em;
+        box-shadow: 0.5em 0 rgba(61, 184, 143, 0.75), -0.5em 0 rgba(233, 169, 32, 0.75);
+    }
+    70% {
+        height: 0.5em;
+        box-shadow: 0.5em -1em rgba(61, 184, 143, 0.75), -0.5em 1em rgba(233, 169, 32, 0.75);
+    }
+    100% {
+        box-shadow: 0.5em 1em rgba(61, 184, 143, 0.75), -0.5em -1em rgba(233, 169, 32, 0.75);
+    }
+}
+
+.eui_loader {
+    position: absolute;
+    top: calc(50% - 1.25em);
+    left: calc(50% - 1.25em);
+}

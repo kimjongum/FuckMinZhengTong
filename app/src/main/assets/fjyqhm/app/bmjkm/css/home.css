@@ -1,0 +1,278 @@
+html,
+body {
+    height: 100%;
+}
+
+.mui-content {
+    background: transparent;
+}
+
+body {
+    position: relative;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+}
+
+.eui-bodyBg {
+    background: url(../images/bg1.png) no-repeat fixed top;
+    background-size: 100% 100%;
+    padding-bottom: 2.6rem;
+}
+
+/* 内容 */
+
+.eui-tip {
+    padding: 0.3rem 0.42rem 0.3rem 1.2rem;
+    font-size: 0.32rem;
+    color: #fff;
+    line-height: 0.45rem;
+    background: url(../images/icon4.png) no-repeat 0.42rem;
+    background-size: 0.52rem;
+}
+
+.eui-idCard {
+    position: relative;
+    margin: 0 0.3rem;
+    height: 3.41rem;
+    padding: 0.3rem 0 0 0.9rem;
+    border-radius: 0.15rem;
+    background: url(../images/new-infoBg.png) no-repeat;
+    background-size: 100% 3.4rem;
+    box-shadow: 0px 0.1rem 0.16rem 0px rgba(0, 0, 0, 0.2);
+}
+
+.eui-idCard h3 {
+    line-height: 1.03rem;
+    padding-left: 1.16rem;
+    font-size: 0.5rem;
+    color: #fff;
+    background: url(../images/logo.png) no-repeat left;
+    background-size: 1.12rem 1.03rem;
+}
+
+.eui-idCard h3 a.hidden {
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.29rem;
+    margin-left: 0.38rem;
+    background: url(../images/new-icon1.png) no-repeat;
+    background-size: 0.5rem 0.29rem;
+}
+
+.eui-idCard h3 a.on {
+    background: url(../images/new-icon2.png) no-repeat;
+    background-size: 0.5rem 0.29rem;
+}
+
+.eui-idCard p {
+    font-size: 0.4rem;
+    line-height: 0.65rem;
+    color: #fff;
+    margin: 0;
+    padding-left: 0.2rem;
+}
+
+.eui-idCard .share {
+    position: absolute;
+    top: 0.28rem;
+    right: -0.08rem;
+    display: block;
+    width: 2.41rem;
+    height: 0.78rem;
+    line-height: 0.72rem;
+    padding-top: 0.06rem;
+    font-size: 0.32rem;
+    color: #fff;
+    text-align: center;
+    background: url(../images/new-infoa.png) no-repeat;
+    background-size: 2.41rem 0.78rem;
+}
+
+.eui-wemMain {
+    position: relative;
+    top: -0.3rem;
+    margin: 0 0.54rem;
+    padding-bottom: 0.2rem;
+    background: url(../images/new-ewmBg.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.eui-wemMain .wem {
+    padding-top: 0.3rem;
+    text-align: center;
+}
+
+.tp174 {
+    padding-top: 1.74rem;
+}
+
+.eui-wemMain .nowem {
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    margin: 0 auto;
+    text-align: center;
+    background: url(../images/ewm-bg.png) no-repeat;
+    background-size: 200px;
+}
+
+.eui-wemMain .nowem a {
+    display: inline-block;
+    height: 0.9rem;
+    line-height: 0.9rem;
+    padding: 0 0.42rem;
+    font-size: 0.42rem;
+    border-radius: 0.9rem;
+    color: #fff;
+    background: #016eff;
+}
+
+.eui-wemMain .wem p {
+    font-size: 0.36rem;
+    color: #999;
+    line-height: 0.8rem;
+}
+
+.eui-wemMain p {
+    text-align: center;
+    font-size: 0.34rem;
+    line-height: 0.5rem;
+    color: #bbb;
+    margin: 0.1rem 0.4rem;
+}
+
+.eui-wemMain .wem h4 {
+    font-size: 0.4rem;
+    font-weight: 400;
+    color: #323232;
+    line-height: 0.82rem;
+    margin: 0;
+}
+
+.eui-wemMain .wem h4 b.red {
+    color: #ff0101;
+}
+
+.eui-wemMain .wem h4 b.green {
+    colo r: #00736a;
+}
+
+.eui-wemMain .wem h3 {
+    font-size: 0.65rem;
+    color: #323232;
+    line-height: 0.95rem;
+    margin: 0;
+}
+
+.eui-wemMain .wem .wemImg {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 0;
+}
+
+.eui-wemMain .wem .refresh {
+    display: inline-block;
+    font-size: 0.38rem;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    color: #999;
+    padding-left: 0.55rem;
+    margin: 0.2rem 0;
+    background: url(../images/icon.png) no-repeat left;
+    background-size: 0.41rem;
+}
+
+.eui-wemMain .wem .refresh span {
+    color: #016eff;
+}
+
+.eui-kslk {
+    font-size: 0;
+    text-align: center;
+    color: #016eff;
+    line-height: 0.8rem;
+}
+
+.eui-kslk a {
+    display: inline-block;
+    position: relative;
+    font-size: 0.4rem;
+    font-weight: bold;
+    color: #016eff;
+    margin: 0 0.3rem;
+}
+
+.eui-kslk a::before {
+    content: "|";
+    position: absolute;
+    left: -9px;
+    width: 1px;
+    color: #016eff;
+    font-weight: 400;
+}
+
+.eui-kslk a:first-child::before {
+    content: '';
+}
+
+.eui-mybtn {
+    display: block;
+    position: relative;
+    margin: 0 0.8rem;
+    height: 1.12rem;
+    line-height: 1.12rem;
+    font-size: 0.4rem;
+    font-weight: bold;
+    color: #016eff;
+    padding: 0 0.52rem;
+    border-radius: 0.1rem;
+    background: #fff;
+}
+
+.eui-mybtn.mui-navigate-right:after {
+    color: #016eff;
+}
+
+.eui-mybtn:active {
+    opacity: 0.8;
+}
+
+.eui-footTxt {
+    position: absolute;
+    bottom: 0.3rem;
+    width: 100%;
+    text-align: center;
+}
+
+.eui-footTxt p {
+    font-size: 0.34rem;
+    line-height: 0.52rem;
+    color: rgba(255, 255, 255, .5);
+    margin: 0;
+}
+
+.eui-hsjc {
+    display: inline-block;
+    line-height: 0.62rem;
+    padding: 0 0.2rem;
+    margin-bottom: 0.2rem;
+    color: #016eff;
+    font-size: 0.32rem;
+    background: #d3e1ff;
+}
+
+/**  新增 **/
+
+.eui-fBtn {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    margin: 0 0.74rem;
+}
+
+.eui-fBtn .eui-mybtn {
+    width: 4.7rem;
+    margin: 0 0.1rem;
+}
