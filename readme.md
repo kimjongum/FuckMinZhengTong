@@ -21,6 +21,8 @@
     * 如果需要重新设置信息，请长按APP图标，点击设置shoutcut。
     * 对于Android 7.0 以下用户，请到APP设置中，清空所有数据，然后重新启动APP进行设置。
 
+![demo](./img1.gif)
+
 
 ## TODO
 
