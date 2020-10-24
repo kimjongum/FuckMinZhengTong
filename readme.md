@@ -9,6 +9,13 @@
 3. 强制推广安装闽政通，不认全国健康码
 
 
+
+## Web版
+
+> https://shirosakimieru.github.io/FuckMinZhengTong/app/src/main/assets/mzt.html?name=YOUR_NAME&idcard=YOUR_ID
+
+请直接替换 ``YOUR_NAME`` 和 ``YOUR_ID`` 为姓名和身份证号即可
+
 ## 使用方法
 
 本APP不需要特殊权限，所有数据均存放在本地应用目录。
