@@ -49,23 +49,25 @@
 		* {
 			touch-action: pan-y;
 		}
-
 	</style>
 
 	<link href="./fjyqhm/app/bmjkm/css/home.css" rel="stylesheet">
 
 </head>
 
-<body class="eui-bodyBg">
-<div class="mui-content" style="padding-bottom: 70px;">
-	<div class="eui-tip">依托全国一体化政务服务平台，实现跨省（区、市）数据共享和互通互认。在使用健康码时不要离开本页面且需本人操作。</div>
-	<div class="eui-idCard">
-		<h3>八闽健康码 <a class="hidden" id="showUserInfo" onclick="showUserInfo()"></a></h3>
+<body class="eui-newbodyBg">
+<div class="mui-content" style="padding-bottom: 1.8rem;">
+
+	<div class="eui-NCard">
+		<h3>
+			<img class="icon" src="./fjyqhm/app/bmjkm/images/logo.png?lxhcVersion=1.0">
+			<span>八闽健康码 <a class="hidden" id="showUserInfo" onclick="showUserInfo()"></a></span>
+		</h3>
 		<p>姓名：<span id="tipName"></span></p>
 		<p>身份证号：<span id="tipIdcard"></span></p>
 		<a class="qf share" id="indexwyfx">我要分享</a>
 		<a class="qf share" id="qhbtn" onclick="qhjkm()"
-		   style="top: 1.16rem;display: block;">切换健康码</a>
+		   style="top: 1.27rem;display: block;">切换健康码</a>
 	</div>
 	<div class="eui-wemMain">
 		<!-- 无二维码 -->
@@ -74,20 +76,15 @@
 				<a id="sxym" onclick="sxym()">去生成</a>
 				<a id="nosxym" style="background: #b4b8be;display:none">去生成(10s)</a>
 			</div>
-			<p style="display:none;">此码不具备识别扫码功能~</p>
 		</div>
 		<!-- 有二维码 -->
 		<div class="wem youma" style="display: none;">
 			<h4 id="okP" style="display:none;">健康状况核验<label
 					style="font-weight: bold;color: #16bcb4;">未见异常(绿码)</label>
 			</h4>
-			<h4 id="noP" style="display:none;">您的健康状况核验<label
-					style="font-weight: bold;color: #f16c4d;">存在异常
-			</label> <b onclick="ckyy()" style="color: #02A7F0;">查看原因</b></h4>
 			<span class="eui-hsjc" id="hsjcjg" style="display:none;"></span>
 			<h3 id="randCode"></h3>
 			<div class="wemImg">
-
 				<div id="qrcode" style="width: 200px; height: 200px;display:none;">
 					<img id="qrCodeIco"
 						 style="position:absolute; z-index:1; height: 100%;width: 100%"/>
@@ -100,7 +97,6 @@
 		</div>
 		<p id="otime"
 		   style="font-size: 0.56rem; color: #323232; line-height: 0.95rem; margin: 0; font-weight: bold;"></p>
-		<p>数据来源：国家政务服务平台和福建省相关部门</p>
 		<div class="eui-kslk" id="wtrdnBtn">
 			<a href="https://mztapp.fujian.gov.cn:8190/mztAppWeb/app/ncov2019/newIndex.jsp">疫情服务</a>
 			<a href="mztapp://busCard" id="qcc">去乘车</a>
@@ -112,13 +108,17 @@
 		<a class="eui-mybtn mui-navigate-right" id="wdjkbb" onclick="jkbg()">我的健康报告</a>
 		<a class="eui-mybtn mui-navigate-right" onclick="xcjl()">我的行程记录</a>
 	</div>
-	<div class="eui-footTxt">
-		<p>客服电话：0591-62623959</p>
-		<p>服务时间： 8:00-12:00 14:00-18:00</p>
-		<p>本应用由福建省数字办&nbsp;&nbsp;卫健委&nbsp;&nbsp;医保局主办</p>
-		<p>福建省经济信息中心承办</p>
+	<ul class="eui-note">
+		<li id="font1" style='display: none'>功能定位：结合医保电子凭证和健康码功能的融合码。</li>
+		<li>数据来源：国家政务服务平台和福建省相关部门。</li>
+		<li id="font2" style='display: none'>应用场景：交通出行、健康核验、医保就诊结算、药店购药结算等。</li>
+		<li>注意事项：使用健康码时不要离开本页面且需本人操作确认。</li>
+		<li>使用范围：依托国家政务服务平台，实现跨省（区、市）数据共享和互通互认。</li>
+	</ul>
+	<div class="eui-copyrigh">
+		<p>客服电话：0591-62623959 / 8:00-12:00 14:00-18:00</p>
+		<p>本应用由福建省数字办 卫健委 医保局主办 福建省经济信息中心承办</p>
 	</div>
-
 </div>
 <!-- 拉码工具js -->
 <script src="./fjyqhm/app/bmjkm/js/qrcode.js"></script>
@@ -141,7 +141,7 @@
 		var fuck = {
 			"success": true,
 			"RANDOM_CODE": "1145141919810",
-			"QR_CODE": "别看你今天闹得欢，小心今后拉清单，头上三尺有神明",
+			"QR_CODE": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
 			"jkzt": "0",
 			"name": getQueryVariable("name"),
 			"idcard": getQueryVariable("idcard"),
@@ -152,6 +152,7 @@
 		};
 
 		cgDetail(fuck);
+
 
 </script>
 </body>
