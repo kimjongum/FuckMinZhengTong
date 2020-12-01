@@ -4,11 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class SettingsActivity extends AppCompatActivity {
+public class ProfileSettingsActivity extends AppCompatActivity {
 
     private EditText nameET;
     private EditText idET;
@@ -16,7 +17,7 @@ public class SettingsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_settings);
+        setContentView(R.layout.activity_profilesettings);
 
 
         this.nameET = findViewById(R.id.Text_Name);
@@ -36,6 +37,13 @@ public class SettingsActivity extends AppCompatActivity {
             startActivity(new Intent(this, MainActivity.class));
         });
 
+    }
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.setting_menui, menu);
+        return true;
     }
 
     @Override

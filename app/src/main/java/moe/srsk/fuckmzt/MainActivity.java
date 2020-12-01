@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
 
         if (!DataUtils.isDataExist(this)) {
             Toast.makeText(this, "请先设置健康码信息", Toast.LENGTH_LONG).show();
-            Intent intent = new Intent(this, SettingsActivity.class);
+            Intent intent = new Intent(this, ProfileSettingsActivity.class);
             intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
         } else {

@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="moe.srsk.fuckmzt">
-
 
     <application
         android:allowBackup="true"
@@ -12,26 +9,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FuckMZT">
+        <activity android:name=".SettingActivity"></activity>
         <activity
-            android:name="moe.srsk.fuckmzt.WebViewActivity"
+            android:name=".WebViewActivity"
             android:launchMode="singleTask"
-            android:parentActivityName=".SettingsActivity"
+            android:parentActivityName=".ProfileSettingsActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".SettingsActivity" />
+                android:value=".ProfileSettingsActivity" />
         </activity>
-
         <activity
-            android:name="moe.srsk.fuckmzt.SettingsActivity"
+            android:name=".ProfileSettingsActivity"
             android:launchMode="singleTask" />
-
-
         <activity
-            android:name="moe.srsk.fuckmzt.MainActivity"
+            android:name=".MainActivity"
             android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
 
