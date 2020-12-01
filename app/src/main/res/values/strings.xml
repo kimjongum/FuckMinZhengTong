@@ -1,5 +1,13 @@
 <resources>
     <string name="app_name">Fuck闽政通</string>
-    <string name="longlabel">健康码</string>
+    <string name="health_qr_code">健康码</string>
     <string name="setting">设置</string>
+    <string name="about">关于</string>
+    <string name="save">保存</string>
+    <string name="idcard_number">身份证号</string>
+    <string name="name">姓名</string>
+    <string name="all_data_saved_locally">所有信息仅保存在本地</string>
+    <string name="health_qr_code_generator">福建省健康码生成器</string>
+    <string name="click2gen">点击生成</string>
+    <string name="powered_by" translatable="false">Powered by SRSK</string>
 </resources>
