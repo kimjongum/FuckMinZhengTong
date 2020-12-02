@@ -12,11 +12,10 @@ public class OptionsMenu {
 
         int itemId = item.getItemId();
         if (itemId == R.id.menu_setting_page) {
-            Toast.makeText(context, "menui!", Toast.LENGTH_SHORT).show();
             Intent settingPage = new Intent(context, SettingActivity.class);
             context.startActivity(settingPage);
         } else if (itemId == R.id.menu_about_page) {
-            Toast.makeText(context, "about!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(context, "别看今天闹得欢，小心今后拉清单！", Toast.LENGTH_SHORT).show();
         }
 
         return true;

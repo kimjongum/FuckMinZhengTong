@@ -9,19 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FuckMZT">
-        <activity android:name=".SettingActivity"></activity>
+        <activity android:name=".SettingActivity" />
         <activity
             android:name=".WebViewActivity"
             android:launchMode="singleTask"
-            android:parentActivityName=".ProfileSettingsActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".ProfileSettingsActivity" />
         </activity>
-        <activity
-            android:name=".ProfileSettingsActivity"
-            android:launchMode="singleTask" />
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTask">

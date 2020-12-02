@@ -8,7 +8,7 @@
         android:shortcutShortLabel="@string/setting">
         <intent
             android:action="android.intent.action.VIEW"
-            android:targetClass="moe.srsk.fuckmzt.ProfileSettingsActivity"
+            android:targetClass="moe.srsk.fuckmzt.SettingActivity"
             android:targetPackage="moe.srsk.fuckmzt" />
         <categories android:name="android.shortcut.conversation" />
     </shortcut>

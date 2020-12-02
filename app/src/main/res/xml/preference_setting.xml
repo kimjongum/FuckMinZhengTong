@@ -3,49 +3,46 @@
 
     <PreferenceCategory android:title="信息设置">
 
-
         <EditTextPreference
-            android:defaultValue="Default value"
-            android:key="edit_text_preference_1"
+            android:defaultValue=""
+            android:key="name_preference"
             android:selectAllOnFocus="true"
             android:singleLine="true"
             android:summary="健康码中显示的姓名"
-            android:title="姓名" />
+            android:title="@string/name" />
         <EditTextPreference
-            android:defaultValue="Default value"
-            android:key="edit_text_preference_1"
+            android:defaultValue=""
+            android:key="idcard_preference"
             android:selectAllOnFocus="true"
             android:singleLine="true"
             android:summary="健康码中显示的身份证"
-            android:title="身份证号" />
+            android:title="@string/idcard_number" />
     </PreferenceCategory>
 
-    <PreferenceCategory android:title="安全">
-
-        <SwitchPreference
-            android:defaultValue="false"
-            android:key="switch_preference_1"
-            android:summary="启动时需验证指纹"
-            android:title="指纹认证" />
-
-    </PreferenceCategory>
+    <!--    <PreferenceCategory android:title="安全">
+        </PreferenceCategory>-->
 
     <PreferenceCategory android:title="快速启动">
 
         <SwitchPreference
             android:defaultValue="false"
-            android:key="switch_preference_1"
-            android:summary="启动时将跳过主页面"
-            android:title="直接显示健康码" />
+            android:key="skip_mainpage_switch_preference"
+            android:summary="跳过主页面，如需再次修改设置请点击右上方菜单"
+            android:title="启动后直接显示健康码" />
 
     </PreferenceCategory>
 
     <PreferenceCategory android:title="实验性选项">
-
         <SwitchPreference
-            android:clickable="false"
             android:defaultValue="false"
-            android:key="switch_preference_1"
+            android:enabled="false"
+            android:key="fingprint_switch_preference"
+            android:summary="启动时需验证指纹"
+            android:title="指纹认证" />
+        <SwitchPreference
+            android:enabled="false"
+            android:defaultValue="false"
+            android:key="facescan_switch_preference"
             android:summary="启动时需验证人脸"
             android:title="人脸识别" />
     </PreferenceCategory>
