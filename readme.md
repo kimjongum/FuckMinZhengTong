@@ -1,5 +1,7 @@
 # Fuck闽政通
 
+![Android CI](https://github.com/ShirosakiMieru/FuckMinZhengTong/workflows/Android%20CI/badge.svg)
+
 由于福建省强制推行闽政通APP用于福建省内的健康码验证，不认支付宝等全国健康码，且闽政通APP用户体验极差，于是开发本APP用于快速生成八闽健康码。
 
 闽政通问题:
